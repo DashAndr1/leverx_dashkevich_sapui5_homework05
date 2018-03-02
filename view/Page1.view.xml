@@ -1,0 +1,15 @@
+<mvc:View
+	controllerName="sap.ui.andrei.dashkevich.controller.Page1"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page 
+		title="{i18n>Page1Title}">
+		<content>
+			<Button
+				text="Page 2"
+				type="Navigation"
+				press="onNextBtnPress">
+			</Button>
+		</content>
+	</Page>
+</mvc:View>

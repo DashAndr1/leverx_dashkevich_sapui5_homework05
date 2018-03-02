@@ -1,0 +1,10 @@
+<mvc:View
+        controllerName="sap.ui.andrei.dashkevich.controller.Page1"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc">
+    <Button
+            text="Page 2"
+            type="Navigation"
+            press="onPress">
+    </Button>
+</mvc:View>

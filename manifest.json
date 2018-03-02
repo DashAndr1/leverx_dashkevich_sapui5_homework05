@@ -1,0 +1,94 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "sap.ui.andrei.dashkevich",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": "sap.ui.andrei.dashkevich.view.App",
+		"dependencies": {
+			"minUI5Version": "1.30",
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sap.ui.andrei.dashkevich.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "sap.ui.andrei.dashkevich.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "1",
+					"target": "1"
+				},
+				{
+					"pattern": "2",
+					"name": "2",
+					"target": "2"
+				},
+				{
+					"pattern": "3",
+					"name": "3",
+					"target": "3"
+				}
+			],
+			"targets": {
+				"1": {
+					"viewName": "Page1",
+					"viewId": "page1",
+					"viewLevel": 1
+				},
+				"2": {
+					"viewName": "Page2",
+					"viewId": "page2",
+					"viewLevel": 2
+				},
+				"3":{
+					"viewName": "Page3",
+					"viewId": "page3",
+					"viewLevel": 3
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"viewId": "notFound"
+				}
+			}
+		}
+
+	}
+
+}
